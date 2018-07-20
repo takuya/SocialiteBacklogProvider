@@ -1,6 +1,6 @@
 <?php
 
-namespace SocialiteProviders\Backlog;
+namespace SocialiteProviders\backlog;
 
 use Laravel\Socialite\Two\ProviderInterface;
 use SocialiteProviders\Manager\OAuth2\AbstractProvider;
@@ -94,7 +94,6 @@ use SocialiteProviders\Manager\OAuth2\User;
    * {@inheritdoc}
    */
   public static function additionalConfigKeys() {
-    // throw new \Exception('');
     return ['space_uri'];
   }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace SocialiteProviders\Backlog;
+namespace SocialiteProviders\backlog;
 
 use SocialiteProviders\Manager\SocialiteWasCalled;
 
