@@ -1,6 +1,6 @@
 <?php
 
-namespace SocialiteProviders\backlog;
+namespace SocialiteProviders\Backlog;
 
 use SocialiteProviders\Manager\SocialiteWasCalled;
 
@@ -11,6 +11,6 @@ class BacklogExtendSocialite {
    */
   public function handle( SocialiteWasCalled $socialiteWasCalled ) {
     $socialiteWasCalled->extendSocialite(
-      'backlog', __NAMESPACE__.'\Provider');
+      'Backlog', __NAMESPACE__.'\Provider');
   }
 }

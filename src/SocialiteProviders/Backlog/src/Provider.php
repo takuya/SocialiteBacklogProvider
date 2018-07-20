@@ -1,6 +1,6 @@
 <?php
 
-namespace SocialiteProviders\backlog;
+namespace SocialiteProviders\Backlog;
 
 use Laravel\Socialite\Two\ProviderInterface;
 use SocialiteProviders\Manager\OAuth2\AbstractProvider;
@@ -85,7 +85,7 @@ use SocialiteProviders\Manager\OAuth2\User;
     $uri = $this->getConfig('space_uri', null);
     if( !$uri ) {
       throw new \InvalidArgumentException(
-        'No space_uri. ENV[BACKLOG_SPACE_URI]=https://your-space-id.backlog.jp/ must be provided.');
+        'No space_uri. ENV[BACKLOG_SPACE_URI]=https://your-space-id.Backlog.jp/ must be provided.');
     }
     return $uri;
   }
