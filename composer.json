@@ -1,5 +1,5 @@
 {
-  "name": "socialiteproviders/Backlog",
+  "name": "socialiteproviders/backlog",
   "description": "Backlog OAuth2 Provider for Laravel Socialite",
   "license": "MIT",
   "authors": [{
