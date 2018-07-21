@@ -6,7 +6,7 @@ use Laravel\Socialite\Two\ProviderInterface;
 use SocialiteProviders\Manager\OAuth2\AbstractProvider;
 use SocialiteProviders\Manager\OAuth2\User;
 
-  class Provider extends AbstractProvider implements ProviderInterface {
+class Provider extends AbstractProvider implements ProviderInterface {
 
   /**
    * Unique Provider Identifier.
@@ -83,10 +83,11 @@ use SocialiteProviders\Manager\OAuth2\User;
    */
   protected function getSpaceUri() {
     $uri = $this->getConfig('space_uri', null);
-    if( !$uri ) {
+    if( ! $uri) {
       throw new \InvalidArgumentException(
         'No space_uri. ENV[BACKLOG_SPACE_URI]=https://your-space-id.Backlog.jp/ must be provided.');
     }
+
     return $uri;
   }
 
